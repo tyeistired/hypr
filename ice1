@@ -11,7 +11,6 @@ yay -S qt6-wayland
 yay -S qt5-wayland 
 yay -S wofi 
 yay -S firefox 
-yay -S pw-volume 
 yay -S polkit-dumb-agent-git 
 
 
