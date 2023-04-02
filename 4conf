@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+tar -xvzf hypr.tar.gz -C /home/*/.config/
