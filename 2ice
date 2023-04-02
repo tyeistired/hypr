@@ -12,6 +12,6 @@ yay -S qt5-wayland
 yay -S wofi 
 yay -S firefox 
 yay -S polkit-dumb-agent-git 
-
+yay -S feh
 
 
