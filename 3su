@@ -15,8 +15,8 @@ echo "hide_borders = true" >> /etc/ly/config.ini
 
 sed -i "s/Exec=/&env WLR_NO_HARDWARE_CURSORS=1 /" /usr/share/wayland-sessions/hyprland.desktop
 
-yay -S xdg-desktop-portal-hyprland-git
+yay -S xdg-desktop-portal-hyprland
 
-yay -S xdg-desktop-portal-hyprland-git
+
 
 
