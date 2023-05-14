@@ -2,10 +2,8 @@
 
 systemctl enable ly
 
-sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="/&nvidia-drm.modeset=1 /' /etc/default/grub
+sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="/& nvidia-drm.modeset=1 ibt=off /' /etc/default/grub
 
-
-echo "remove ibt=off if failed to load kernel module"
 
 update-grub
 
