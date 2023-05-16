@@ -28,3 +28,10 @@ pacman -S grub efibootmgr os-prober
 
 grub-install
 
+pacman -S sudo
+
+useradd -m ty
+
+passwd ty
+
+
