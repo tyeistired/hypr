@@ -1,5 +1,13 @@
 #!/bin/bash
 
-mkfs.fat -F32 /dev/sdx0
+mkfs.fat -F32 /dev/sd#1
 
-mkfs.ext4 /dev/sdx0
+mkfs.ext4 /dev/sd#2
+
+mount /dev/sd#2 /mnt
+
+pacstrap /mnt base linux linux-firmware base-devel git nano wget
+
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
