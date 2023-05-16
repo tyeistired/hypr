@@ -16,32 +16,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
 
-echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
-
-locale-gen
-
-echo LANG=en_US.UTF-8 > /etc/locale.conf
-
-echo ty > /etc/hostname
-
-passwd
-
-pacman -S grub efibootmgr os-prober
-
-grub-install
-
-grub-mkconfig -o /boot/grub/grub.cfg
-
-pacman -S sudo
-
-useradd -m ty
-
-passwd ty
-
-echo "ty ALL=(ALL:ALL) ALL" >> /etc/sudoers
-
-systemctl enable dhcpcd
-
 
 
 
