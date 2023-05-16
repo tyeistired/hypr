@@ -1,1 +1,1 @@
-nvidia nvidia-utils libva-vdpau-driver nvidia-settings amd-ucode
+sudo pacman -S nvidia nvidia-utils libva-vdpau-driver nvidia-settings amd-ucode
