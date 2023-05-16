@@ -30,6 +30,8 @@ pacman -S grub efibootmgr os-prober
 
 grub-install
 
+grub-mkconfig -o /boot/grub/grub.cfg
+
 pacman -S sudo
 
 useradd -m ty
