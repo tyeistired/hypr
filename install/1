@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkfs.fat -F32 /dev/sdx0
+
+mkfs.ext4 /dev/sdx0
