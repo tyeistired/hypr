@@ -6,6 +6,10 @@ mkfs.ext4 /dev/sd#2
 
 mount /dev/sd#2 /mnt
 
+mkdir -p /mnt/boot/efi
+
+mount /dev/sd#1 /mnt/boot/efi
+
 pacstrap /mnt base linux linux-firmware base-devel git nano wget dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -17,4 +21,10 @@ echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
 locale-gen
 
 echo LANG=en_US.UTF-8 > /etc/locale.conf
+
+echo ty > /etc/hostname
+
+pacman -S grub efibootmgr os-prober
+
+grub-install
 
