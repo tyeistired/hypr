@@ -40,6 +40,8 @@ passwd ty
 
 echo "ty ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
+systemctl enable dhcpcd
+
 
 
 
