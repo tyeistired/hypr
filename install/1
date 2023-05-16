@@ -6,8 +6,15 @@ mkfs.ext4 /dev/sd#2
 
 mount /dev/sd#2 /mnt
 
-pacstrap /mnt base linux linux-firmware base-devel git nano wget
+pacstrap /mnt base linux linux-firmware base-devel git nano wget dhcpcd
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
+
+echo en_US.UTF-8 UTF-8 >> /etc/locale.gen
+
+locale-gen
+
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+
