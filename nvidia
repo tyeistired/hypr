@@ -1,5 +1,6 @@
 #!/bin/bash
 
 yay -S lib32-nvidia-utils
-yay -S lib32-opencl-nvidia
+yay -S lib32-opencl-nvidia opencl-nvidia
 yay -S nvidia-tweaks
+
