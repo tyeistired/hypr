@@ -16,13 +16,8 @@ grub-install
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-pacman -S sudo
+pacman -S sudo dhcpcd
 
-useradd -m ty
-
-passwd ty
-
-echo "ty ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 systemctl enable dhcpcd
 
